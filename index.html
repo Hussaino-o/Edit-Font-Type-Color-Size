@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        height: 100vh;
+        padding: 150px 0;
+        font-family: "Cairo", sans-serif;
+      }
+
+      .controler {
+        width: 90%;
+        background-color: white;
+        margin: 0 auto 30px;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+        color: white;
+        transition: 0.3s;
+        direction: rtl;
+        h2 {
+          margin-bottom: 40px;
+          font-weight: normal;
+          font-size: 25px;
+        }
+        .selects {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          select {
+            width: calc(100% / 3);
+            padding: 15px 10px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+          }
+        }
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+      }
+      .tester {
+        width: 90%;
+        background-color: white;
+        margin: 0 auto 30px;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+        color: white;
+        h1 {
+          transition: 0.3s;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controler">
+      <h2>🎨 تخصيص النص</h2>
+      <div class="selects">
+        <select class="font-type" name="" id="">
+          <option value="Open Sans">Open Sans</option>
+          <option value="Cairo">Cairo</option>
+          <option value="Roboto">Roboto</option>
+        </select>
+        <select class="color-type" name="" id="">
+          <option value="#ff6b6b">Red</option>
+          <option value="#4ecdc4">Blue</option>
+          <option value="#96ceb4">Green</option>
+          <option value="#ffeaa7">Yallow</option>
+          <option value="#fd79a8">Orange</option>
+          <option value="#a29bfe">Purple</option>
+        </select>
+        <select class="font-size" name="" id="">
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          <option value="32">32</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+        </select>
+      </div>
+    </div>
+    <div class="tester">
+      <h1>حسين علي</h1>
+    </div>
+    <script></script>
+    <script src="main.js"></script>
+  </body>
+</html>
